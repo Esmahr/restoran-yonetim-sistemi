@@ -1,0 +1,47 @@
+.logo img {
+    width: 160px;
+    margin-top: 1rem;
+}
+
+.dashboard-sidebar {
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    height: 100vh;
+}
+
+.sidebar-list {
+    list-style: none;
+    text-align: start;
+    padding-top: 2rem;
+    padding-left: 0;
+    font-size: 15px;
+}
+
+.item {
+    margin-top: 1rem;
+    display: flex;
+    padding: .5rem;
+    padding-left: 2rem;
+    cursor: pointer;
+
+    a {
+        display: flex;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.item:hover {
+    background-color: #080100;
+
+    a {
+        color: white;
+    }
+}
+
+.item-icon img {
+    width: 20px;
+    margin-right: 1rem;
+    margin-left: .7rem;
+}

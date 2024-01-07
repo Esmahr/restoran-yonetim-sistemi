@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    .sidebar {
+        width: 14.5rem;
+        height: 100vh;
+    }
+
+    main {
+        width: 85%;
+        padding: 1rem;
+
+        .navbar {
+            width: 100%;
+            background-color: white;
+            height: 4.3rem;
+            h2{
+                margin: 0;
+                padding-left: 1rem;
+                padding-top: .5rem;
+            }
+            p{
+                padding-left: 1rem;
+                padding-bottom: .5rem;
+            }
+        }
+
+        .content {
+            width: 100%;
+            background-color: white;
+            margin-top: 1rem;
+            .article{
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+.background-image {
+    overflow: hidden;
+    height: 100vh;
+
+    img {
+        width: 100%;
+        height: 100vh;
+        z-index: 0;
+    }
+}
+
+.efekt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -0;
+}

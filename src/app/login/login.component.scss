@@ -1,0 +1,88 @@
+.bacground-image {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+.efekt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.content {
+    position: fixed;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    padding-top: 10rem;
+
+    .card {
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+        margin: auto;
+        width: 22rem;
+        background-color: white;
+        opacity: .9;
+        border-radius: 1rem;
+
+        h3 {
+            font-size: 32px;
+        }
+
+        input {
+            height: 2rem;
+            width: 15rem;
+            border-radius: .5rem;
+            border: 1px solid silver;
+            padding: .5rem;
+            margin-top: 1rem;
+
+            &:focus-visible {
+                outline-color: silver;
+            }
+        }
+
+        .submit {
+            width: 7rem;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            font-weight: bold;
+            background-color: rgb(34, 112, 176);
+            color: white;
+            font-size: 16px;
+
+            &:hover,
+            &:active {
+                background-color: rgb(39, 124, 194);
+            }
+        }
+    }
+}
+
+.uyarı{
+    color: silver;
+    font-size: 13px;
+    margin-top: 2rem;
+    a{
+        color: rgb(150, 150, 150);
+    }
+}
+
+.sifremi-unuttum{
+    color: silver;
+    font-size: 13px;
+    margin-top: 0rem;
+    a{
+        color: rgb(150, 150, 150);
+    }
+}  
