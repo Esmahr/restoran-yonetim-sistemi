@@ -1,1 +1,73 @@
-<p>orders works!</p>
+<main>
+    <div class="header">
+        <div class="manage-order order-step">
+            <h2>Siparişi Yönet</h2>
+            <button (click)="downloadPDF()">Onayla ve Öde</button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="customer-details order-step">
+            <h2>Müşteri Bilgileri</h2>
+            <form>
+                <input type="text" placeholder="Müşteri Adı*" name="name">
+                <input type="email" placeholder="E-posta*" name="email">
+                <input type="tel" placeholder="Telefon Numarası*" name="number">
+                <select id="payment" name="payment">
+                    <option value="Nakit">Nakit</option>
+                    <option value="Kredi">Kredi Kartı</option>
+                </select>
+            </form>
+        </div>
+        <div class="select-product order-step">
+            <h2>Ürün Seç</h2>
+            <form>
+                <select id="category" name="category">
+                    <option value="Nakit">Kategori</option>
+                    <option value="Kredi">Ürün</option>
+                </select>
+                <select id="product" name="product">
+                    <option value="Nakit">Nakit</option>
+                    <option value="Kredi">Kredi Kartı</option>
+                </select>
+                <input type="number" placeholder="Tutar*" name="tutar">
+                <input type="number" placeholder="Miktar*" name="miktar">
+                <input type="number" placeholder="Total*" name="total">
+            </form>
+
+            <div class="footer" style="display: flex;justify-content: space-between;">
+                <button style="margin-left: .5rem;">Ekle</button>
+                <button>Toplam Ödeme: 2180</button>
+            </div>
+        </div>
+        <div class="product-list order-step">
+            <table class="category-list" style="width: 100%;">
+                <tr class="title" style="text-align: left;justify-content: space-between;">
+                    <th class="title-item">Ürün Adı</th>
+                    <th class="title-item">Kategori</th>
+                    <th class="title-item">Fiyat</th>
+                    <th class="title-item">Miktar</th>
+                    <th class="title-item">Total</th>
+                    <th class="title-item">Sil</th>
+                </tr>
+                <tr class="category-column">
+                    <td class="column-item">Alfreds Futterkiste</td>
+                    <td class="column-item">
+                        a
+                    </td>
+                    <td class="column-item">
+                        a
+                    </td>
+                    <td class="column-item">
+                        a
+                    </td>
+                    <td class="column-item">
+                        a
+                    </td>
+                    <td class="column-item" style="cursor: pointer;">
+                        <img src="../../assets/delete.png" alt="">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</main>

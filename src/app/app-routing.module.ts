@@ -8,6 +8,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { CategoryComponent } from './category/category.component';
 import { MenuComponent } from './menu/menu.component';
 import { OrdersComponent } from './orders/orders.component';
+import { BillComponent } from './bill/bill.component'
 
 const routes: Routes = [
 
@@ -19,10 +20,11 @@ const routes: Routes = [
     path: 'dashboard',
     component: DashboardComponent,
     children: [
-      { path: '', redirectTo: 'profile', pathMatch: 'full' },
+      { path: '', redirectTo: 'menu', pathMatch: 'full' },
       { path: 'menu', component: MenuComponent, data: { title: 'Dashboard-Menü' } },
       { path: 'orders', component: OrdersComponent, data: { title: 'Dashboard-Siparişler' } },
-      { path: 'category', component: CategoryComponent, data: { title: 'Dashboard-Kategoriler' } }
+      { path: 'category', component: CategoryComponent, data: { title: 'Dashboard-Kategoriler' } },
+      { path: 'bills', component: BillComponent, data: { title: 'Dashboard-Ödmeler' } }
     ],
   },];
 

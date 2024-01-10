@@ -3,9 +3,8 @@
     <div class="sidebar-items">
         <ul class="sidebar-list">
             <li class="item">
-                <a href="/dashboard/category">
-                    <div class="item-icon">
-                        <img src="../../../assets/sidebar-icon/siparis.png" alt="">
+                <a [routerLink]="['/dashboard/orders']">
+                    <div class="item-icon image1">
                     </div>
                     <div class="item-text">
                         Siparişler
@@ -13,9 +12,8 @@
                 </a>
             </li>
             <li class="item">
-                <a href="/dashboard/category">
-                    <div class="item-icon">
-                        <img src="../../../assets/sidebar-icon/category.png" alt="">
+                <a [routerLink]="['/dashboard/category']">
+                    <div class="item-icon image2">
                     </div>
                     <div class="item-text">
                         Kategoriler
@@ -23,12 +21,20 @@
                 </a>
             </li>
             <li class="item">
-                <a href="/dashboard/category">
-                    <div class="item-icon">
-                        <img src="../../../assets/sidebar-icon/menu.png" alt="">
+                <a [routerLink]="['/dashboard/menu']">
+                    <div class="item-icon image3">
                     </div>
                     <div class="item-text">
                         Menü
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a [routerLink]="['/dashboard/bills']">
+                    <div class="item-icon image4">
+                    </div>
+                    <div class="item-text">
+                        Ödemeler
                     </div>
                 </a>
             </li>

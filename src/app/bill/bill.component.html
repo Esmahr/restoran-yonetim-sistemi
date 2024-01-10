@@ -1,0 +1,58 @@
+<menu>
+    <div class="search-bar">
+        <form>
+            <input type="text" placeholder="Kategori Ara.." name="search">
+        </form>
+    </div>
+    <div class="bill-list">
+        <table class="category-list" style="width: 100%;">
+            <tr class="title" style="text-align: left;justify-content: space-between;">
+                <th class="title-item">Ürün</th>
+                <th class="title-item">Kategori</th>
+                <th class="title-item">Fiyat</th>
+                <th class="title-item">Miktar</th>
+                <th class="title-item">Total</th>
+                <th class="title-item">İşlemler</th>
+            </tr>
+            <tr class="category-column">
+                <td class="column-item">test</td>
+                <td class="column-item">test</td>
+                <td class="column-item">test</td>
+                <td class="column-item">test</td>
+                <td class="column-item">test</td>
+                <td class="column-item" style="display: flex;padding-top: .5rem;">
+                    <div class="w3-container" style="padding: 0rem;">
+                        <img src="../../assets/detail.png" alt="" style="margin-right: 1rem;"
+                            onclick="document.getElementById('id01').style.display='block'" class="">
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-zoom w3-card-2">
+                                <header class="w3-container">
+                                    <span onclick="document.getElementById('id01').style.display='none'"
+                                        class="w3-button w3-display-topright">&times;</span>
+                                    <h2>Ödeme Detayı</h2>
+                                </header>
+                                <div class="w3-container">
+                                    <div class="search-bar" style="margin: 4rem;">
+                                        <form>
+                                            <input type="text" placeholder="Kategori Adı*" name="search"
+                                                style="width: 35rem;">
+                                        </form>
+                                        <footer class="w3-container" style="padding-bottom: 2rem;">
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding-top: .3rem;margin-right: 1rem;">
+                        <img src="../../assets/download.png" alt="Download" (click)="downloadPDF()">
+                    </div>
+                    <div style="padding-top: .3rem;margin-right: 1rem;">
+                    <img src="../../assets/delete.png" alt="" style="margin-right: 1rem;width: 20px; height: 20px;"
+                        class="">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</menu>

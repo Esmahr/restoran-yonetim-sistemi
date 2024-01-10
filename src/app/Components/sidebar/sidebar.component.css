@@ -25,6 +25,38 @@
     padding-left: 2rem;
     cursor: pointer;
 
+    .image1 {
+        width: 24px;
+        height: 24px;
+        margin-right: .5rem;
+        background-image: url(../../../assets/sidebar-icon/siparis.png);
+    }
+
+    .image2 {
+        width: 24px;
+        height: 24px;
+        margin-right: .5rem;
+        background-image: url(../../../assets/sidebar-icon/category.png);
+    }
+
+    .image3 {
+        width: 24px;
+        height: 24px;
+        margin-right: .5rem;
+        background-image: url(../../../assets/sidebar-icon/menu.png);
+    }
+
+    .image4 {
+        width: 24px;
+        height: 24px;
+        margin-right: .5rem;
+        background-image: url(../../../assets/sidebar-icon/bill.png);
+    }
+
+    .item-text {
+        padding-top: .1rem;
+    }
+
     a {
         display: flex;
         text-decoration: none;
@@ -35,13 +67,35 @@
 .item:hover {
     background-color: #080100;
 
+    .image1 {
+        width: 24px;
+        height: 24px;
+        margin-right: .5rem;
+        background-image: url(../../../assets/sidebar-icon/light/lorders.png);
+    }
+
+    .image2 {
+        width: 24px;
+        height: 24px;
+        margin-right: .5rem;
+        background-image: url(../../../assets/sidebar-icon/light/lcategory.png);
+    }
+
+    .image3 {
+        width: 24px;
+        height: 24px;
+        margin-right: .5rem;
+        background-image: url(../../../assets/sidebar-icon/light/lmenu.png);
+    }
+
+    .image4 {
+        width: 24px;
+        height: 24px;
+        margin-right: .5rem;
+        background-image: url(../../../assets/sidebar-icon/light/lbill.png);
+    }
+
     a {
         color: white;
     }
-}
-
-.item-icon img {
-    width: 20px;
-    margin-right: 1rem;
-    margin-left: .7rem;
 }

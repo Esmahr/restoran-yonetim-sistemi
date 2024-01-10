@@ -3,14 +3,22 @@
         <app-sidebar></app-sidebar>
     </div>
     <main>
-        <div class="navbar">
+        <div class="navbar" style="display: flex; justify-content: space-between;">
             <div class="hosgeldin">
                 <h2>Selam, Esma Harmancı</h2>
                 <p>Hoş Geldin!</p>
             </div>
+            <div class="profie">
+                <div class="dropdown">
+                    <img src="../../assets/user.png"class="dropbtn" alt="">
+                    <div class="dropdown-content">
+                      <a href="#">Çıkış Yap</a>
+                    </div>
+                  </div>
+            </div>
         </div>
         <div class="content">
-            <div class="article"><app-eat-card></app-eat-card></div>
+            <div class="article"><router-outlet></router-outlet></div>
         </div>
     </main>
 </body>

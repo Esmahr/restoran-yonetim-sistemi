@@ -1,1 +1,66 @@
-<p>eat-card works!</p>
+<div class="product-card" [ngClass]="{'inactive': !isActive}">
+    <div class="product-price">
+        <div class="price">89.90</div>
+    </div>
+    <div class="product-image"><img src="../../assets/cafe.avif" alt=""></div>
+    <div class="product-name">Hamburger</div>
+    <div class="product-category">Tatlı</div>
+    <div class="product-detail">Lorem sdfgh dfghj fgh ghj fghjk ghjur delectus?</div>
+    <div class="action">
+        <div class="edit">
+            <div class="w3-container">
+                <img src="../../../assets/edit.png" alt=""
+                    onclick="document.getElementById('id02').style.display='block'" class="edit-button">
+                <div id="id02" class="w3-modal">
+                    <div class="w3-modal-content w3-animate-zoom w3-card-2">
+                        <header class="w3-container">
+                            <span onclick="document.getElementById('id02').style.display='none'"
+                                class="w3-button w3-display-topright">&times;</span>
+                            <h2>Ürün Düzenle</h2>
+                        </header>
+                        <div class="w3-container">
+                            <div class="search-bar" style="margin: 4rem;">
+                                <form>
+                                    <input type="text" placeholder="Ürün Adı*" name="search" style="width: 35rem;">
+                                </form>
+                            </div>
+                            <div style="display: flex;margin: 3rem;">
+                                <div class="search-bar" style="margin: 1rem;">
+                                    <form>
+                                        <input type="text" placeholder="Ürün Fiyatı*" name="search"
+                                            style="width: 15rem;">
+                                    </form>
+                                </div>
+                                <div class="search-bar" style="margin: 1rem;">
+                                    <form>
+                                        <input type="text" placeholder="Ürün Kategorisi*" name="search"
+                                            style="width: 17rem;">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="search-bar" style="margin: 4rem;">
+                                <form>
+                                    <input type="text" placeholder="Ürün Açıklaması*" name="search"
+                                        style="width: 35rem;">
+                                </form>
+                            </div>
+                        </div>
+                        <footer class="w3-container" style="padding-bottom: 2rem;">
+                            <button class="w3-button"
+                                style="background-color: black;color: white;border-radius: .7rem;">Kaydet</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="delete">
+            <img src="../../../assets/delete.png" alt="" class="delete-button">       
+        </div>
+        <div class="status" style="padding-top: 4px;">
+            <label class="switch">
+                <input type="checkbox" [(ngModel)]="isActive">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+</div>

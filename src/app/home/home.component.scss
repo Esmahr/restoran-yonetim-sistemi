@@ -22,7 +22,7 @@
     position: fixed;
     z-index: 3;
     color: white;
-    width: 90%;
+    width: 100%;
 
     .home-navbar {
         padding: .5rem 5rem;
@@ -40,7 +40,7 @@
             .item {
                 padding: 0rem 1rem;
                 padding-bottom: 2.5rem;
-                font-family: 'Josefin Sans', sans-serif;
+                font-: 'Josefin Sans', sans-serif;
                 font-size: 18px;
 
                 &:hover {
@@ -71,7 +71,6 @@
     p {
         max-width: 50%;
         margin: auto;
-        padding-left: 12rem;
         margin-top: 7rem;
     }
 
@@ -82,7 +81,7 @@
         border: none;
         border-radius: .5rem;
         opacity: 0.7;
-        margin-left: 12rem;
+        margin-left: 2rem;
         font-size: 16px;
         margin-top: 1rem;
         cursor: pointer;

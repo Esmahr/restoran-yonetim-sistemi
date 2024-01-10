@@ -1,1 +1,100 @@
-<p>menu works!</p>
+<main>
+ <!--<div class="filtering">
+        <h2>Filtreleme</h2>
+        <form action="/action_page.php" method="get">
+            <input type="checkbox" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Tatlı</label><br>
+            <input type="checkbox" name="vehicle2" value="Car">
+            <label for="vehicle2"> Tuzlu</label><br> 
+            <input type="checkbox" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Çay</label><br>
+            <input type="checkbox" name="vehicle2" value="Car">
+            <label for="vehicle2"> Kahve</label><br> 
+            <input type="checkbox" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Ara Sıcak</label><br>
+            <input type="checkbox" name="vehicle2" value="Car">
+            <label for="vehicle2"> Ana Yemek</label><br> 
+            <input type="checkbox" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Pizza</label><br>
+            <input type="checkbox" name="vehicle2" value="Car">
+            <label for="vehicle2"> Hamburger</label><br> 
+            <input type="checkbox" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br><br>
+        </form>
+    </div>-->
+
+    <div class="content">
+        <div style="display: flex;justify-content: space-between;padding-top: 1rem;">
+            <div class="title">
+                <h1>Ürünler</h1>
+            </div>
+            <div class="product-add">
+                <div class="w3-container">
+                    <button onclick="document.getElementById('id01').style.display='block'" class="">Ürün Ekle</button>
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content w3-animate-zoom w3-card-2">
+                            <header class="w3-container">
+                                <span onclick="document.getElementById('id01').style.display='none'"
+                                    class="w3-button w3-display-topright">&times;</span>
+                                <h2>Ürün Ekle</h2>
+                            </header>
+                            <div class="w3-container">
+                                <div class="search-bar" style="margin: 4rem;">
+                                    <form>
+                                        <input type="text" placeholder="Ürün Adı*" name="search" style="width: 35rem;">
+                                    </form>
+                                </div>
+                                <div style="display: flex;margin: 3rem;">
+                                    <div class="search-bar" style="margin: 1rem;">
+                                        <form>
+                                            <input type="text" placeholder="Ürün Fiyatı*" name="search"
+                                                style="width: 15rem;">
+                                        </form>
+                                    </div>
+                                    <div class="search-bar" style="margin: 1rem;">
+                                        <form>
+                                            <input type="text" placeholder="Ürün Kategorisi*" name="search"
+                                                style="width: 17rem;">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="search-bar" style="margin: 4rem;">
+                                    <form>
+                                        <input type="text" placeholder="Ürün Açıklaması*" name="search"
+                                            style="width: 35rem;">
+                                    </form>
+                                </div>
+                            </div>
+                            <footer class="w3-container" style="padding-bottom: 2rem;">
+                                <button class="w3-button">Ürün Ekle</button>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <app-eat-card></app-eat-card>
+            <app-eat-card></app-eat-card>
+            <app-eat-card></app-eat-card>
+            <app-eat-card></app-eat-card>
+            <app-eat-card></app-eat-card>
+            <app-eat-card></app-eat-card>
+            <app-eat-card></app-eat-card>
+            <app-eat-card></app-eat-card>
+            <app-eat-card></app-eat-card>
+            <app-eat-card></app-eat-card>
+            <app-eat-card></app-eat-card>
+            <app-eat-card></app-eat-card>
+            <app-eat-card></app-eat-card>
+            <app-eat-card></app-eat-card>
+            <app-eat-card></app-eat-card>
+            <app-eat-card></app-eat-card>
+            <app-eat-card></app-eat-card>
+        </div>
+    </div>
+</main>

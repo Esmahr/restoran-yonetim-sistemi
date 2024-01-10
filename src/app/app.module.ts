@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,11 +12,12 @@ import { EatCardComponent } from './Components/eat-card/eat-card.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
-import { FormsModule } from '@angular/forms';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { CategoryComponent } from './category/category.component';
 import { OrdersComponent } from './orders/orders.component';
 import { MenuComponent } from './menu/menu.component';
+import { BillComponent } from './bill/bill.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,13 +32,15 @@ import { MenuComponent } from './menu/menu.component';
     ForgotPasswordComponent,
     CategoryComponent,
     OrdersComponent,
-    MenuComponent
+    MenuComponent,
+    BillComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
