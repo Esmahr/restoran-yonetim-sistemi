@@ -2,20 +2,20 @@
 
 ### Home
 
-![Sokoban game screenshot](src/assets/readme/home.png)
+![restoran screenshot](src/assets/readme/home.png)
 
 ### Menu
 
-![Sokoban game screenshot](src/assets/readme/menu.png)
+![restoran screenshot](src/assets/readme/menu.png)
 
 ### Orders
 
-![Sokoban game screenshot](src/assets/readme/siparis.png)
+![restoranscreenshot](src/assets/readme/siparis.png)
 
 ### Category
 
-![Sokoban game screenshot](src/assets/readme/kategori.png)
+![restoran screenshot](src/assets/readme/kategori.png)
 
 ### View Bills
 
-![Sokoban game screenshot](src/assets/readme/odeme.png)
+![restoran screenshot](src/assets/readme/odeme.png)
