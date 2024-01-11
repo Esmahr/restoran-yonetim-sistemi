@@ -24,19 +24,19 @@ export class OrdersComponent implements OnInit {
     doc.setTextColor(100);
 
     // Müşteri bilgilerini ekleyin
-    doc.text(`Name: BTech Days`, 14, 30);
-    doc.text(`Email: btechdays@gmail.com`, 14, 38);
-    doc.text(`Contact Number: 1231231231`, 14, 46);
-    doc.text(`Payment Method: Cash`, 14, 54);
+    doc.text(`Isim: Fatma Cetin`, 14, 30);
+    doc.text(`E-Posta: fatma@gmail.com`, 14, 38);
+    doc.text(`Iletisim Numarasi: 1231231231`, 14, 46);
+    doc.text(`Ödeme Yöntemi: Nakit`, 14, 54);
 
     // Ürün detaylarının başlığını ekleyin
     doc.setFontSize(14);
-    doc.text('Product Details:', 14, 65);
+    doc.text('Ürün Detayi:', 14, 65);
 
     // Tablo başlıkları ve verileri
-    const tableColumn = ["Name", "Category", "Quantity", "Price", "Sub Total"];
+    const tableColumn = ["Ürün Ismi", "Kategori", "Miktar", "Fiyat", "Toplam"];
     const tableRows = [
-      ["Black Tea", "Tea", "123", "20", "2460"],
+      ["Yesil Çay", "Tea", "123", "20", "2460"],
       // Diğer ürünler buraya eklenebilir
     ];
 
@@ -59,9 +59,9 @@ export class OrdersComponent implements OnInit {
     const finalY = (doc as any).autoTable.previous.finalY || doc.internal.pageSize.getHeight();
 
     // Toplam tutarı ve diğer içeriği ekleyin
-    doc.text(`Total: 2460`, 14, finalY + 10);
+    doc.text(`Toplam: 2460`, 14, finalY + 10);
     let thankYouY = finalY + 20; // Teşekkür mesajının y koordinatını ayarlayın
-    doc.text('Thank you for visiting. Please visit again!', 14, thankYouY);
+    doc.text('Bizi Tercih Ettiginiz icin Tesekkür Ederiz', 14, thankYouY);
 
     // PDF'i kaydedin
     doc.save('odeme-bilgileri.pdf');

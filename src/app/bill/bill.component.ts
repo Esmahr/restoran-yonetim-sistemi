@@ -27,7 +27,7 @@ export class BillComponent implements OnInit {
     doc.text('Ödeme Yöntemi: Nakit', 14, 54);
   
     // Tablo verilerini ve başlıklarını tanımlayın
-    const sütunBaşlıkları = ["Ürün", "Kategori", "Fiyat", "Miktar", "Total"];
+    const sütunBaşlıkları = ["Ürün", "Kategori", "Fiyat", "Miktar", "Toplam"];
     const veriler = [
       ["Kahve", "Içecek", "89.50 TL", 2, "179 TL"],
       // Daha fazla ürün ekleyebilirsiniz

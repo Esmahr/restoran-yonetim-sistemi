@@ -134,6 +134,10 @@ input:focus, input:active {
 
 .product-card.inactive {
     filter: grayscale(100%); /* Gri efekt */
+    .edit-button, .delete-button {
+        pointer-events: none; // Düzenleme ikonu için tıklanabilirliği kapat
+        opacity: 0.5; // Düzenleme ikonunu soluk göster
+    }
 }
 
 /* Switch stil tanımlamaları */
