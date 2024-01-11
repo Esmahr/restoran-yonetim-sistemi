@@ -9,6 +9,7 @@ import { CategoryComponent } from './category/category.component';
 import { MenuComponent } from './menu/menu.component';
 import { OrdersComponent } from './orders/orders.component';
 import { BillComponent } from './bill/bill.component'
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
 
@@ -19,6 +20,7 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
+    //canActivate: [AuthGuard],
     children: [
       { path: '', redirectTo: 'menu', pathMatch: 'full' },
       { path: 'menu', component: MenuComponent, data: { title: 'Dashboard-Menü' } },

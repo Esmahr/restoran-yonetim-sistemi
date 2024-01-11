@@ -18,7 +18,6 @@ export class SignupComponent {
   constructor(private restoranYonetimiService: RestoranYonetimiService) { }
 
   onSubmit(): void {
-    // Burada form verilerini gönderme işlemini yapacağız.
     const data = {
       firstName: this.signupData.fname,
       lastName: this.signupData.lname,

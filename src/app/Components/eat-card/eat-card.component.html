@@ -1,11 +1,11 @@
 <div class="product-card" [ngClass]="{'inactive': !isActive}">
     <div class="product-price">
-        <div class="price">89.90</div>
+        <div class="price">{{fiyat}}</div>
     </div>
     <div class="product-image"><img src="../../assets/cafe.avif" alt=""></div>
-    <div class="product-name">Hamburger</div>
-    <div class="product-category">Tatlı</div>
-    <div class="product-detail">Lorem sdfgh dfghj fgh ghj fghjk ghjur delectus?</div>
+    <div class="product-name">{{isim}}</div>
+    <div class="product-category">{{kategori}}</div>
+    <div class="product-detail">{{detay}}</div>
     <div class="action">
         <div class="edit">
             <div class="w3-container">
